@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task Detail</h1>
+    <p>Task Title - {{ task.title }}</p>
+    <p>{{task.note }}</p>
+    <p>Due Date: {{ task.due_date }}</p>
+    <p>
+        Task create date - {{task.create_date}}
+    </p>
+    <p>
+        Completed - {{task.completed}}
+    </p>
+    <br>
+    <p>
+        <a href="{% url 'task_list' %}">Your Task List</a>
+    </p>
+</body>
+</html>
